@@ -42,6 +42,10 @@ function descobrirResist(){
 
         if(color == 'dourado'){
             color = 'ouro';
+        }else if(color == 'roxo'){
+            color = 'violeta';
+        }else if(color == 'prateado'){
+            color = 'prata'
         }
 
         if(i == faixaNum - 1){
