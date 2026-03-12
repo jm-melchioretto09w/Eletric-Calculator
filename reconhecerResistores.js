@@ -11,6 +11,7 @@ function descobrirResist(){
         'cinza' : '8',
         'branco' : '9'  
     };
+    
     const tabelaMultiplo = {
         'preto' : 10 ** 0,
         'marrom' : 10 ** 1,
@@ -25,6 +26,7 @@ function descobrirResist(){
         'ouro' : 10 ** -1,
         'prata' : 10 ** -2 
     };
+
     const tabelaTolerar = {
         'marrom' : 1,
         'vermelho' : 2,
@@ -32,7 +34,7 @@ function descobrirResist(){
         'prata' : 10,
         'branco' : 20
     }
-    //fazer uma tabela de tolerância
+
     let faixaNum = parseInt(prompt('Insira a uantidade de faixas(4 ou 5)'));
     let value = '';
 

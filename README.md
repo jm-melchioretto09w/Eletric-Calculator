@@ -87,6 +87,8 @@ Este script permite calcular o valor da resistência de um resistor com base no 
 
 Como usar:
 
+    Passo 1: Aperte o botão de identificação de resistor
+    
     Passo 2: O sistema solicitará o número de faixas (4 ou 5).
 
     Passo 3: Insira as cores das faixas do resistor.

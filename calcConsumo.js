@@ -8,7 +8,8 @@ function principal(){
         principal();
     }
 
-    let time = parseInt(prompt('Insira durante quantas horas diárias seu/sua '+ name +' é usad@ (h)')), res = power * time * 30, price = Number(prompt('Insira valor cobrado por kWh'));
+    let time = parseInt(prompt('Insira durante quantas horas diárias seu/sua '+ name +' é usad@ (h)')), price = Number(prompt('Insira valor cobrado por kWh'));
+    let res = power * time * 30
 
     alert('Seu/sua ' + name + ' usa ' + res.toFixed(2) + 'kWh, lhe custando um total de R$' + (res * price).toFixed(2));
 }
