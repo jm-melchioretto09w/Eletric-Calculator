@@ -35,7 +35,7 @@ function descobrirResist(){
         'branco' : 20
     }
 
-    let faixaNum = parseInt(prompt('Insira a uantidade de faixas(4 ou 5)'));
+    let faixaNum = parseInt(prompt('Insira a quantidade de faixas(4 ou 5)'));
     let value = '';
 
     for(let i = 0; i < faixaNum; i++){
