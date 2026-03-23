@@ -39,23 +39,37 @@ function descobrirResist(){
     let value = '';
 
     for(let i = 0; i < faixaNum; i++){
+
         let color = prompt('Insira a cor da ' + (i + 1) + 'ª faixa');
         color = color.toLowerCase();
 
         if(color == 'dourado'){
+            
             color = 'ouro';
+
         }else if(color == 'roxo'){
+
             color = 'violeta';
+
         }else if(color == 'prateado'){
+
             color = 'prata'
+
         }
 
         if(i == faixaNum - 1){
+
             alert('O resistor terá uma resistência de ' + value + ' Ohms com tolerância de ' + tabelaTolerar[color] + '%, que seriam, aproximadamente, ' + (value * (tabelaTolerar[color]/100)).toFixed(2) + ' Ohms a mais ou a menos');
+
         }else if(i == faixaNum - 2){
+
             value = Number(value) * tabelaMultiplo[color];
+
         }else{
+
             value += tabelaDigito[color];
+
         }
+
     }
 }

@@ -47,7 +47,7 @@ Exemplo:
 
 2. Conversor de Unidades de Eletroeletrônica
 
-Esta ferramenta converte valores entre unidades com prefixos métricos (G, M, K, m, μ (use "u" por questões técnicas), n).
+Esta ferramenta converte valores entre unidades com prefixos métricos (T, G, M, K, m, μ (use "u" por questões técnicas), n, p).
 
 Como usar:
 
@@ -121,3 +121,74 @@ Exemplo:
 
         O resistor terá uma resistência de 22,000 Ohms com tolerância de 5%, que seriam, aproximadamente, 1,100 Ohms a mais ou a menos.
 
+4. Realizar calculos com a lei de Ohm
+
+Este script permite que você realize calculos com a lei de Ohm
+
+Como usar:
+
+    Passo 1: O sistema solicitará a grandeza desconhecida
+
+    Passo 2: O sistema solicitará o valor da primeira grandeza conhecida
+
+    Passo 3: O sistema solicitará o valor da segunda grandeza conhecida
+
+    Passo 4: O sistema calcula o valor da grandeza desconhecida a partir das conhecidas
+
+Resultado:
+
+O sistema exibirá o valor da grandeza desconhecida
+
+Exemplo:
+
+    Entrada:
+
+        A grandeza desconhecida é a resistência (R)
+
+        O valor da tensão é 40
+
+        O valor da corrente é 10
+
+    Resultado Exibido:
+
+        A R é de 4 Ohm
+
+5. Descobrir a Req de uma associação de reistores
+
+Este script permite que você realize o calculo da resistência equivalente de resistores associados em série ou em paralelo
+
+Como usar:
+
+    Passo 1: aperte o botão de associação de resistores
+
+    Passo 2: O sistema irá solicitar o tipo de associação
+
+    Passo 3: O sistema irá solicitar a quantidade de resistores associados
+
+    Passo 4: O sistema irá solicitar a resistência de cada resistor individualmente
+
+    Passo 5: O sistema irá calculra a resistência equivalente
+
+Resultado:
+
+O sistema exibirá um alerta com a resistência equivalente da associação
+
+Exemplo:
+
+    Entrada
+
+        Resistores associados em série (S)
+
+        3 resistores foram associados
+
+        Resistências:
+
+            -10
+
+            -9
+
+            -1
+
+    Resultado Exibido:
+
+    A associação indicada gera 20 Ohms de resistência

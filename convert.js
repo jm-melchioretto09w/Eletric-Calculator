@@ -1,5 +1,5 @@
 function conversorUni(){
-    let prefix = ['G', 'M', 'K', '', 'm', 'u', 'n'];
+    let prefix = ['T', 'G', 'M', 'K', '', 'm', 'u', 'n', 'p'];
 
     let uniB = prompt('Insira unidade plena');
     let value = Number(prompt('Insira valor'));
@@ -14,8 +14,10 @@ function conversorUni(){
     let res;
 
     if(prefix.includes(uni1) && prefix.includes(uni2)){
+
         exp = prefix.indexOf(uni2) - prefix.indexOf(uni1);
         res = value * (Math.pow(10, (exp * 3)));
+        
     }
 
     alert('o novo valor será ' + res + uni2 + uniB);
