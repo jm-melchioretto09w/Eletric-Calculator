@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Energética CTW-MI82 JM: Conversão</title>
+</head>
+<body>
+
+    <script src="convert.js"></script>
+
+    <input type="text" id="uniP" placeholder="Unidade plena" oninput="conversorUni()">
+    <input type="number" id="valor" placeholder="Valor" oninput="conversorUni()">
+    <select name="prefixo si 1" id="prefixo1" oninput="conversorUni()">
+        <option value="T" id="tera1"></option>
+        <option value="G" id="giga1"></option>
+        <option value="M" id="mega1"></option>
+        <option value="K" id="kilo1"></option>
+        <option value="" id="base1"></option>
+        <option value="m" id="mili1"></option>
+        <option value="u" id="micro1"></option>
+        <option value="n" id="nano1"></option>
+        <option value="p" id="pico1"></option>
+    </select>
+    <p id="resultado">Resultado: </p>
+    <select name="prefixo si 2" id="prefixo2" oninput="conversorUni()">
+        <option value="T" id="tera2"></option>
+        <option value="G" id="giga2"></option>
+        <option value="M" id="mega2"></option>
+        <option value="K" id="kilo2"></option>
+        <option value="" id="base2"></option>
+        <option value="m" id="mili2"></option>
+        <option value="u" id="micro2"></option>
+        <option value="n" id="nano2"></option>
+        <option value="p" id="pico2"></option>
+    </select>
+
+    <a href="index.html">
+        <button>Voltar</button>
+    </a>
+    
+</body>
+</html>

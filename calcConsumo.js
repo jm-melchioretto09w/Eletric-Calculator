@@ -1,19 +1,20 @@
 function principal(){
-    let name = prompt('Insira nome do item'), wkw = prompt('A potência será medida em W ou kW?(insira a unidade)'), power = Number(prompt('Insira a potência em ' + wkw));
+    wkw = document.getElementById("uni"), power = document.getElementById("potencia"), time = document.getElementById("tempo"), price = document.getElementById("valor"), resultado = document.getElementById("resultado"), preco = document.getElementById("preco");
+
+    wkw = wkw.value;
+    power = power.value;
+    time = time.value;
+    price = price.value;
 
     if(wkw == 'W'){
         
         power /= 1000
 
-    }else if(wkw != 'kW'){
-
-        alert('Unidade inválida, favor repita processo');
-        principal();
-
     }
+    
+    let res = power * time * 30;
 
-    let time = parseInt(prompt('Insira durante quantas horas diárias seu/sua '+ name +' é usad@ (h)')), price = Number(prompt('Insira valor cobrado por kWh'));
-    let res = power * time * 30
+    resultado.innerText = "Gasto: " + res.toFixed(2);
+    preco.innerText = "Preço: " + (res * price).toFixed(2);
 
-    alert('Seu/sua ' + name + ' usa ' + res.toFixed(2) + 'kWh, lhe custando um total de R$' + (res * price).toFixed(2));
 }

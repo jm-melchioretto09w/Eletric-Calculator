@@ -1,28 +1,41 @@
 function leiOhm(){
-    let proc = prompt(`Insira a variável procurada:
-        -U: para potência
-        -R: para a resistência
-        -I: para a corrente`);
+    let proc = document.getElementById("proc");
+    proc = proc.value;
 
-    let u, r, i, res, uni;
+    let u = document.getElementById("tensao"),r = document.getElementById("resistencia"),i = document.getElementById("corrente");
 
-    if(proc != 'U'){
+    let resultado = document.getElementById("resultado");
 
-        u = Number(prompt('Insira o valor de U'));
+    if(proc == 'U'){
+
+        u.disabled = true;
+        u = u.value;
+        r.disabled = false;
+        r = r.value;
+        i.disabled = false;
+        i = i.value;
+
+    }else if(proc == 'R'){
+
+        u.disabled = false;
+        u = u.value;
+        r.disabled = true;
+        r = r.value;
+        i.disabled = false;
+        i = i.value;
+
+    }else if(proc == 'I'){
+
+        u.disabled = false;
+        u = u.value;
+        r.disabled = false;
+        r = r.value;
+        i.disabled = true;
+        i = i.value;
 
     }
 
-    if(proc != 'R'){
-
-        r = Number(prompt('Insira o valor de R'));
-
-    }
-
-    if(proc != 'I'){
-
-        i = Number(prompt('Insira o valor de I'));
-
-    }
+    let res, uni;
 
     switch(proc){
         case 'U':
@@ -34,7 +47,7 @@ function leiOhm(){
         case 'R':
 
             res = u / i;
-            uni = ' Ohm'
+            uni = ' Ω'
 
             break;
         case 'I':
@@ -45,5 +58,5 @@ function leiOhm(){
             break;
     }
 
-    alert('A ' + proc + ' é de ' + res + uni);
+    resultado.innerText = 'A ' + proc + ' é de ' + res + uni;
 }

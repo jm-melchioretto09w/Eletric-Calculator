@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Energética CTW-MI82 JM: Ohm</title>
+</head>
+<body>
+
+    <script src="leiOhm.js"></script>
+
+    <select name="procurado" id="proc" oninput="leiOhm()">
+        <option value="">-</option>
+        <option value="U" id="uSelect">Tensão - U</option>
+        <option value="R" id="rSelect">Resistência - Ω</option>
+        <option value="I" id="iSelect">Corrente - I</option>
+    </select>
+
+    <input type="number" id="tensao" placeholder="Tensão" oninput="leiOhm()">
+    <input type="number" id="resistencia" placeholder="Resistência" oninput="leiOhm()">
+    <input type="number" id="corrente" placeholder="Corrente" oninput="leiOhm()">
+
+    <p id="resultado">resultado</p>
+
+    <a href="index.html">
+        <button>Voltar</button>
+    </a>
+    
+</body>
+</html>

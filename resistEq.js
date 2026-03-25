@@ -1,41 +1,36 @@
 function resistEq(){
 
-    let tipo = prompt('Insira tipo de associação (S: série|P: paralelo)');
-    let qtd = parseInt(prompt('Insira a quantidade de resistores associados'));
-    let res = [];
+    let tipo = document.getElementById("tipo");
+    tipo = tipo.value;
+    let qtd = document.getElementById("qtd");
+    qtd = qtd.value;
+    let res = document.getElementById("res");
+    res = res.value;
+    let resultado = document.getElementById("resultado")
 
-    for(let i = 0; i < qtd; i++){
-
-        res[i] = Number(prompt('Insira a resistência do ' + (1 + i) + 'º resistor'));
-
-    }
 
     let ans = 0;
 
-    if(tipo == 'S'){
+    if(tipo == 1){
 
         for(let j = 0; j < qtd; j++){
 
-            ans += res[j];
+            ans += res;
 
         }
 
-    }else if(tipo == 'P'){
+    }else if(tipo == 2){
 
         for(let j = 0; j < qtd; j++){
 
-            ans += 1 / res[j];
+            ans += 1 / res;
 
         }
 
         ans = 1 / ans;
 
-    }else{
-
-        alert('Opção inválida, repita o processo!');
-
     }
 
-    alert('A associação indicada gera ' + ans + ' Ohms de resistência');
+    resultado.innerText = "Req: " + ans + "Ω"
 
 }

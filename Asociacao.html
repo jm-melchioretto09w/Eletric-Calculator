@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Energética CTW-MI82 JM: Asociação</title>
+</head>
+<body>
+
+    <script src="resistEq.js"></script>
+
+    <select name="SouP" id="tipo" oninput="resistEq()">
+        <option value=""> - </option>
+        <option value="1">Série</option>
+        <option value="2">Paralelo</option>
+    </select>
+
+    <input type="number" id="qtd" placeholder="Digite a quantidade" oninput="resistEq()">
+
+    <input type="number" id="res" placeholder="Resistência do resistor" oninput="resistEq()">
+
+    <p id="resultado">Req: </p>
+
+    <a href="index.html">
+        <button>Voltar</button>
+    </a>
+    
+</body>
+</html>
