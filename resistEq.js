@@ -5,7 +5,7 @@ function resistEq(){
     let qtd = document.getElementById("qtd");
     qtd = qtd.value;
     let res = document.getElementById("res");
-    res = res.value;
+    res = Number(res.value);
     let resultado = document.getElementById("resultado")
 
 

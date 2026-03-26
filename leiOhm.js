@@ -9,31 +9,26 @@ function leiOhm(){
     if(proc == 'U'){
 
         u.disabled = true;
-        u = u.value;
         r.disabled = false;
-        r = r.value;
         i.disabled = false;
-        i = i.value;
 
     }else if(proc == 'R'){
 
         u.disabled = false;
-        u = u.value;
         r.disabled = true;
-        r = r.value;
         i.disabled = false;
-        i = i.value;
 
     }else if(proc == 'I'){
 
         u.disabled = false;
-        u = u.value;
         r.disabled = false;
-        r = r.value;
         i.disabled = true;
-        i = i.value;
-
+        
     }
+
+    u = u.value;
+    r = r.value;
+    i = i.value;
 
     let res, uni;
 
@@ -47,7 +42,7 @@ function leiOhm(){
         case 'R':
 
             res = u / i;
-            uni = ' Ω'
+            uni = 'Ω'
 
             break;
         case 'I':

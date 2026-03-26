@@ -9,9 +9,75 @@
 
     <script src="reconhecerResistores.js"></script>
 
-    fazer por último
+    <select name="quantidade" id="qtd" oninput="descobrirResist()">
+        <option value="5">5 faixas</option>
+        <option value="4">4 faixas</option>
+    </select>
 
-    <button onclick="descobrirResist()">PlaceHolder</button>
+    <select name="digito1" id="d1" oninput="descobrirResist()">
+        <option value="0">preto</option>
+        <option value="1">marrom</option>
+        <option value="2">vermelho</option>
+        <option value="3">laranja</option>
+        <option value="4">amarelo</option>
+        <option value="5">verde</option>
+        <option value="6">azul</option>
+        <option value="7">violeta</option>
+        <option value="8">cinza</option>
+        <option value="9">branco</option>
+    </select>
+
+    <select name="digito2" id="d2" oninput="descobrirResist()">
+        <option value="0">preto</option>
+        <option value="1">marrom</option>
+        <option value="2">vermelho</option>
+        <option value="3">laranja</option>
+        <option value="4">amarelo</option>
+        <option value="5">verde</option>
+        <option value="6">azul</option>
+        <option value="7">violeta</option>
+        <option value="8">cinza</option>
+        <option value="9">branco</option>
+    </select>
+
+    <select name="digito3" id="d3" oninput="descobrirResist()">
+        <option value="0">preto</option>
+        <option value="1">marrom</option>
+        <option value="2">vermelho</option>
+        <option value="3">laranja</option>
+        <option value="4">amarelo</option>
+        <option value="5">verde</option>
+        <option value="6">azul</option>
+        <option value="7">violeta</option>
+        <option value="8">cinza</option>
+        <option value="9">branco</option>
+    </select>
+
+    <select name="multiplo" id="m" oninput="descobrirResist()">
+        <option value="0">preto</option>
+        <option value="1">marrom</option>
+        <option value="2">vermelho</option>
+        <option value="3">laranja</option>
+        <option value="4">amarelo</option>
+        <option value="5">verde</option>
+        <option value="6">azul</option>
+        <option value="7">violeta</option>
+        <option value="8">cinza</option>
+        <option value="9">branco</option>
+        <option value="-1">ouro</option>
+        <option value="-2">prata</option>
+    </select>
+
+    <select name="tolrrancia" id="t" oninput="descobrirResist()">
+        <option value="1">marrom</option>
+        <option value="2">vermelho</option>
+        <option value="5">ouro</option>
+        <option value="10">prata</option>
+        <option value="20">branco</option>
+    </select>
+
+    <p id="resist">Resistência:</p>
+    <p id="tolera">Tolerância:</p>
 
     <a href="index.html">
         <button>Voltar</button>
